@@ -59,6 +59,7 @@ public class ProdutoDAO {
     }
     
     public ArrayList<Produto> listarTodos(){
+
         String sql = "SELECT * FROM produto";
         try{
             st = conn.createStatement();
