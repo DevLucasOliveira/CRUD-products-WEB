@@ -12,7 +12,7 @@ public class ConnectionFactory {
             Class.forName("com.mqsl.jdbc.Driver");
             return DriverManager.getConnection("jdbc:mysql://localhost/mercadoweb","root","");
         }catch(Exception erro){
-            throw new RuntimeException("Erro 1"+erro);
+            throw new RuntimeException("Erro 1: "+erro);
         }
         
     }
